@@ -34,6 +34,6 @@ func run() {
 		l.Error(scanner.Err().Error())
 	}
 
-	inv := invoker.NewInvoker(&c)
+	inv := invoker.NewAwsLambdaInvoker()
 	inv.Run(c)
 }

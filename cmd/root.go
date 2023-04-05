@@ -4,6 +4,7 @@ import (
 	"github.com/spf13/cobra"
 
 	"mahuike/cmd/aws"
+	"mahuike/cmd/gcp"
 	"mahuike/logger"
 
 	log "github.com/sirupsen/logrus"
@@ -51,6 +52,7 @@ func Execute() error {
 
 func init() {
 	rootCmd.AddCommand(aws.AwsCmd)
+	rootCmd.AddCommand(gcp.GcpCmd)
 	// cobra.OnInitialize(initConfig)
 
 	//rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.cobra.yaml)")

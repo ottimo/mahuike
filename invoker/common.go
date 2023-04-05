@@ -13,6 +13,7 @@ type Invoker interface {
 type CmdLine struct {
 	Service   string
 	ServiceId string
+	Project   string
 	Data      string
 	Region    string
 }
