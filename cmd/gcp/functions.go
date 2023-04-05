@@ -10,7 +10,8 @@ import (
 
 var (
 	functionCmd = &cobra.Command{
-		Use: "function [OPTIONS]",
+		Use:              "functions",
+		TraverseChildren: true,
 		Run: func(cmd *cobra.Command, args []string) {
 			run()
 		},

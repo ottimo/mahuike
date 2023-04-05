@@ -20,6 +20,6 @@ var c invoker.CmdLine
 
 func init() {
 	GcpCmd.PersistentFlags().StringVarP(&c.Region, "region", "r", "", "Region where the resource is located")
-	GcpCmd.MarkFlagRequired("region")
+	GcpCmd.MarkPersistentFlagRequired("region")
 	GcpCmd.AddCommand(functionCmd)
 }
